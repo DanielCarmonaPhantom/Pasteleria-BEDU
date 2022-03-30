@@ -1,4 +1,4 @@
-# Pasteleria Bedu
+# Pastelería Bedu
 ### Proyecto Final de Módulo Backend Fundamentals
 
 Introducción:
