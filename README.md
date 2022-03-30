@@ -2,7 +2,7 @@
 ### Proyecto Final de Módulo Backend Fundamentals
 
 Introducción:
-Proyecto de una pasteleria donde se trabajaron 5 áreas: 
+Proyecto de una pastelería donde se trabajaron 5 áreas: 
 1. Backend con Node.js y API Rest con Express.js
 2. Base de datos con PostgreSQL.
 3. Diseño UX/UI de la Interfaz de Usuario
