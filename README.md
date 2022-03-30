@@ -3,7 +3,7 @@
 
 Introducción:
 Proyecto de una pasteleria donde se trabajaron 4 áreas: 
-1. Backend con Node y API Rest con Express.Js
+1. Backend con Node.js y API Rest con Express.js
 2. Base de datos con PostgreSQL.
 3. Diseño UX/UI de la Pasteleria.
 4. Diseño Frontend de la Pasteleria.
