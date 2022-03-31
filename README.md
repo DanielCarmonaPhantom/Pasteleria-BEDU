@@ -11,9 +11,9 @@ Proyecto de una pastelería donde se trabajaron 5 áreas:
 
 
 <section id="desing">
-  <h3>Diseño UX/UI</h3>
+  <h3>3. Diseño UX/UI de la Interfaz de Usuario</h3>
   Para la experiencia y diseño del usuario se siguio una métodlogia Design Thinkin.
   
-  Para ver el proceso completo de diseño dar <a href='./design/' >click aquí</a>
+  <a href='./design/' >Proceso de Diseño</a>
   
  </section>
