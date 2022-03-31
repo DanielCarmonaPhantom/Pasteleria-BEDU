@@ -4,7 +4,7 @@ Este archivo se explicara como se llevo acabo todo el proceso tomando una métod
 
 Contenido:
 
-1. <a href='#jroneys'>Encuesta a Usuarios</a>
+1. <a href='#jorneys'>Encuesta a Usuarios</a>
 2. User Persona
 3. User Jorney
 4. Arquitectura de la información
