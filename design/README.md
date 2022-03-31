@@ -21,5 +21,5 @@ Contenido:
 <section id='jorneys' >
   <h3>3. User Jorney</h3>
   <p>Se mapeo el proceso que tiene un usuario a la hora de comprar/elegir un pastel, ubicando los puntos en los que estariamos mejorando la experiencia de usuario.</p>
-  <img src="./Journey.jpg">
+  <img src="./Jorney.jpg">
 </section>
