@@ -12,3 +12,8 @@ Contenido:
 6. WIreframe de Baja Fidelidad
 7. Moodboard
 8. Wireframe de Alta Fidelidad
+
+### Encuestras a Usuarios
+
+Se realizo una encuesta para conocer las necesidades de los usuarios en el proceso de la compra de pasteles. 
+<img src="./Encuesta.jpg">
