@@ -8,7 +8,7 @@ Contenido:
 2. User Persona
 3. <a href='#jorney'>User Jorney</a>
 4. Arquitectura de la información
-5. User Flow
+5. <a href='#user'>User Flow</a>
 6. WIreframe de Baja Fidelidad
 7. Moodboard
 8. Wireframe de Alta Fidelidad
@@ -22,4 +22,9 @@ Contenido:
   <h3>3. User Jorney</h3>
   <p>Se mapeo el proceso que tiene un usuario a la hora de comprar/elegir un pastel, ubicando los puntos en los que estariamos mejorando la experiencia de usuario.</p>
   <img src="./Jorney.jpg">
+</section>
+<section id='user' >
+  <h3>5. User Flow</h3>
+  <p>Se diseño el flujo de datos, proceso y tecnologías que se utiliziarian para la aplicación.</p>
+  <img src="./UserFlow.jpg">
 </section>
