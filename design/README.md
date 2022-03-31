@@ -4,7 +4,7 @@ Este archivo se explicara como se llevo acabo todo el proceso tomando una métod
 
 Contenido:
 
-1. Encuesta a Usuarios
+1. <a href='#jroneys'>Encuesta a Usuarios</a>
 2. User Persona
 3. User Jorney
 4. Arquitectura de la información
@@ -13,7 +13,13 @@ Contenido:
 7. Moodboard
 8. Wireframe de Alta Fidelidad
 
-### Encuestras a Usuarios
+<section id='jorneys' >
+  <h3> Encuesta a Usuarios</h3>
+  <p>Se realizo una encuesta para conocer las necesidades de los usuarios en el proceso de la compra de pasteles. </p>
+  <img src="./Encuesta.jpg">
+</section>
 
-Se realizo una encuesta para conocer las necesidades de los usuarios en el proceso de la compra de pasteles. 
-<img src="./Encuesta.jpg">
+
+
+
+### 2. 
