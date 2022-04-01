@@ -15,8 +15,8 @@ Proyecto de una pastelería donde se trabajaron 5 áreas:
   
   <ul>
     <li>Routes <ul>
-        <li>Cakes.Routes: <li>
-        <li>Complements.Routes: <li>
+        <li>Cakes.Routes: </li>
+        <li>Complements.Routes: </li>
       </ul>
     </li>
     <li>Services <ul>
