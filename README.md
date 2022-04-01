@@ -15,20 +15,27 @@ Proyecto de una pastelería donde se trabajaron 5 áreas:
   
   <ul>
     <li>Routes <ul>
-        <li>Cakes<li>
+        <li>Cakes.Routes: <li>
       </ul>
     </li>
+    <li>Services <ul>
+        <li>Cake.Service: </li>
+      </ul>
+    <li>
   </ul>
   
+  <section id="postgresql">
+    <h3>2. Base de datos con PostgreSQL.</h3>
   
-  
-  
-  
-  
+  <a href='./design/' >Proceso de Diseño</a>
+    
+ </section>
+  <h3>2. Base de datos con PostgreSQL.</h3>
+  <p></p>
  </section>
 
 <section id="desing">
   <h3>3. Diseño UX/UI de la Interfaz de Usuario</h3>
-  Para la experiencia y diseño del usuario se siguio una métodologia Design Thinkin.
+  <p>Para la experiencia y diseño del usuario se siguio una métodologia Design Thinkin.</p>
   <a href='./design/' >Proceso de Diseño</a>
  </section>
