@@ -21,7 +21,10 @@ Proyecto de una pastelería donde se trabajaron 5 áreas:
     <li>Services <ul>
         <li>Cake.Service: </li>
       </ul>
-    <li>
+    </li>
+    <li> Middlewares <ol>
+      </ol>
+    </li>
   </ul>
 </section>
   
