@@ -22,13 +22,13 @@ Proyecto de una pastelería donde se trabajaron 5 áreas:
         <li>Cake.Service: </li>
       </ul>
     </li>
-    <li>Middlewares <ol>
+    <li>Middlewares <ul>
       <li></li>
-      </ol>
+      </ul>
     </li>
-    <li>Schemas <ol>
+    <li>Schemas <ul>
       <li></li>
-      </ol>
+      </ul>
     </li>
   </ul>
 </section>
