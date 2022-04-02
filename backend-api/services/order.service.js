@@ -2,14 +2,13 @@ const boom = require('@hapi/boom');
 const faker = require('faker');
 
 // const getConnection = require('../libs/postgres')
-const pool = require('../libs/postgres.pool')
+//const pool = require('../libs/postgres.pool')
+const sequelize = require('../libs/sequelize')
 
 class ComplementsService{
     constructor(){
         this.orders = [];
         this.generate();
-        this.pool = pool;
-        this.pool.on('error', (err) => console.log(err))
     }
 
     generate() {
@@ -40,8 +39,8 @@ class ComplementsService{
 
     async find(){
         const query = 'SELECT * FROM task';
-        const rta = await this.pool.query(query);
-        return rta.rows;
+        const [data] = await sequelize.query(query);
+        return data;
 
     }
 
