@@ -15,13 +15,15 @@ Proyecto de una pastelería donde se trabajaron 5 áreas:
   
   <ul>
     <li>Routes <ul>
-        <li>Cakes.Routes: </li>
-        <li>Complements.Routes: </li>
+        <li>Cakes.Routes</li>
+        <li>Complements.Routes</li>
+        <li>Orders.Routes</li>
       </ul>
     </li>
     <li>Services <ul>
         <li>Cake.Service: </li>
         <li>Complemnets.Service: </li>
+        <li>Orders.Service</li>
       </ul>
     </li>
     <li>Middlewares <ul>
@@ -30,7 +32,7 @@ Proyecto de una pastelería donde se trabajaron 5 áreas:
       </ul>
     </li>
     <li>Schemas <ul>
-      <li>Cake.Schemma</li>
+      <li>Cake.Schema</li>
       </ul>
     </li>
   </ul>
