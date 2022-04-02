@@ -1,16 +1,16 @@
-// const boom = require('@hapi/boom');
+ const boom = require('@hapi/boom');
 const faker = require('faker');
 
 class ComplementsService{
     constructor(){
-        this.products = [];
+        this.complements = [];
         this.generate();
     }
 
     generate() {
         const limit = 100;
         for (let index = 0; index < limit; index++) {
-            this.products.push({
+            this.complements.push({
                 id: faker.datatype.uuid(),
                 name: faker.commerce.productName(),
                 price: parseInt(faker.commerce.price(), 10),
@@ -21,20 +21,29 @@ class ComplementsService{
     }
     
 
-    async create(){
-
+    async create(data){
+        const { name, price, image } = data;
+        const newCake ={
+            id: faker.datatype.uuid(),
+            name,
+            price,
+            image
+        }
+        this.cakes.push(newCake);
+        return newCake;
     }
 
     async find(){
-        return this.products;
+        return this.complements;
     }
 
-    async findFlavors(){
-
+    async findOne(id){
+        console.log(id)
+        return this.complements.find(item => item.id === id);
     }
 
     async update(id, changes){
-
+        
     }
 
     async delete(id){

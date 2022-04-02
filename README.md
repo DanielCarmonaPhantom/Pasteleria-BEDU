@@ -23,11 +23,12 @@ Proyecto de una pastelería donde se trabajaron 5 áreas:
       </ul>
     </li>
     <li>Middlewares <ul>
-      <li></li>
+      <li>@hapi/boom</li>
+      <li>Joi<li>
       </ul>
     </li>
     <li>Schemas <ul>
-      <li></li>
+      <li>Cake.Schemma</li>
       </ul>
     </li>
   </ul>
