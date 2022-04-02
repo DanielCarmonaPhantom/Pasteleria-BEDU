@@ -9,7 +9,7 @@ const router = express.Router();
 const service = new CakesService ();
 
 
-router.get('/', async (req, res)=>{
+router.get('/', async (req, res, next)=>{
     try{
         const cakes = await service.find();
         res.json(cakes)
