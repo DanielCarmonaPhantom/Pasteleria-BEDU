@@ -38,7 +38,7 @@ Proyecto de una pastelería donde se trabajaron 5 áreas:
 <section id="postgresql">
   <h3>2. Base de datos con PostgreSQL.</h3>  
   <p>Para la experiencia y diseño del usuario se siguio una métodologia Design Thinkin.</p>
-  <img src='./bd/Diagram2.jpg'>
+  <img src='./bd/Diagram.jpg'>
 </section>
 
 <section id="design">
