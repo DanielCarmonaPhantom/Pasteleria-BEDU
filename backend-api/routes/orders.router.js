@@ -20,18 +20,18 @@ router.get('/', async (req, res, next)=>{
 });
 
 
-router.get('/:id', async (req, res)=>{
-    const { id } = req.params;
+router.get('/:idOrder', async (req, res)=>{
+    const { idOrder } = req.params;
     
-    const complements = await service.findOne(id);
-    res.json(complements)
+    const orders = await service.findOne(idOrder);
+    res.json(orders)
     
 })
 
 router.post('/', async (req, res)=>{
     const body = req.body;
-    const newComplement= await service.create(body)
-    res.status(201).json(newComplements);
+    const newOrder= await service.create(body)
+    res.status(201).json(newOrder);
 })
 
 module.exports = router;

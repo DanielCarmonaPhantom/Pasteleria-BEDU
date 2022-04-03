@@ -1,62 +1,63 @@
 const boom = require('@hapi/boom');
 const faker = require('faker');
 
-// const getConnection = require('../libs/postgres')
-//const pool = require('../libs/postgres.pool')
 const { models } = require('./../libs/sequelize')
 
-class ComplementsService{
+class OrdersService{
     constructor(){
-        this.orders = [];
+        this.products = [];
         this.generate();
     }
 
     generate() {
         const limit = 100;
         for (let index = 0; index < limit; index++) {
-            this.orders.push({
+            this.products.push({
                 id: faker.datatype.uuid(),
                 name: faker.commerce.productName(),
                 price: parseInt(faker.commerce.price(), 10),
                 image: faker.image.imageUrl(),
-                isBlock: faker.datatype.boolean(),
+                
             });
         }
     }
     
 
     async create(data){
-        const { name, price, image } = data;
-        const newOrder ={
-            id: faker.datatype.uuid(),
-            name,
-            price,
-            image
-        }
-        this.cakes.push(newOrder);
-        return newOrder;
+        const newOrder = await models.Order.create(data);
+        return newOrder
     }
 
-    async find(){        
+    async find(){
         const rta = await models.Order.findAll();
         return rta;
-
     }
 
     async findOne(id){
-        console.log(id)
-        return this.orders.find(item => item.id === id);
+
+        const order = await models.Order.findByPk(id)
+        if (!order) {
+            throw boom.notFound('product not found')
+        }
+        return order
     }
 
     async update(id, changes){
-        
+        const order = await this.findOne(id);
+        const rta = await order.update(changes)
+        return rta;
     }
 
     async delete(id){
-
+        const order = await this.findOne(id);
+        if (!order) {            
+            throw boom.notFound('product not found')
+        }
+        await order.destroy();
+        return { id };
     }
 
 
 }
 
-module.exports = ComplementsService;
+module.exports = OrdersService;

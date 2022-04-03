@@ -9,32 +9,28 @@ const OrderSchema = {
         primaryKey: true,
         type: DataTypes.INTEGER
     },
-    Date:{
-        allowNull: false,
-        type: DataTypes.DATE
-    },
-    idStore:{
+    idPayment:{
         allowNull: false,
         type: DataTypes.INTEGER
     },
-    idClients:{
+    idProduct:{
         allowNull: false,
         type: DataTypes.INTEGER
     },
-    idEmployee:{
-        allowNull: false,
-        type: DataTypes.INTEGER
-    },
-    Order_Cakes:{
+    amount:{
         allow_Null: false,
-        type: DataTypes.JSON
+        type: DataTypes.INTEGER
     },
-    Order_Complements:{
+    size:{
         allowNull: false,
-        type: DataTypes.JSON,
-        field: 'Date',
-        defaultValue: Sequelize.NOW
+        type: DataTypes.INTEGER
     },
+    price:{
+        allowNull: false,
+        type: DataTypes.DECIMAL
+    },
+    
+
     
 }
 
