@@ -9,7 +9,7 @@ Contenido:
 3. <a href='#jorney'>User Jorney</a>
 4. <a href='#architecture'>Arquitectura de la información</a>
 5. <a href='#user'>User Flow</a>
-6. WIreframe de Baja Fidelidad
+6. <a href='#low'>Wireframe de Baja Fidelidad</a>
 7. Moodboard
 8. Wireframe de Alta Fidelidad
 
@@ -33,3 +33,9 @@ Contenido:
   <p>Se diseño el flujo de datos, proceso y tecnologías que se utiliziarian para la aplicación.</p>
   <img src="./UserFlow.jpg">
 </section>
+<section id='low' >
+  <h3>6. Wireframe de Baja Fidelidad</h3>
+  <p>Se fue diseñado la interfaz de baja fidelaidad cumpliendo con los requerimientos de usuario según el user flow.</p>
+  <img src="./Wireframes.jpg">
+</section>
+
