@@ -3,7 +3,7 @@ const faker = require('faker');
 
 // const getConnection = require('../libs/postgres')
 //const pool = require('../libs/postgres.pool')
-const sequelize = require('../libs/sequelize')
+const { models } = require('./../libs/sequelize')
 
 class ComplementsService{
     constructor(){
@@ -37,10 +37,9 @@ class ComplementsService{
         return newOrder;
     }
 
-    async find(){
-        const query = 'SELECT * FROM task';
-        const [data] = await sequelize.query(query);
-        return data;
+    async find(){        
+        const rta = await models.Order.findAll();
+        return rta;
 
     }
 
