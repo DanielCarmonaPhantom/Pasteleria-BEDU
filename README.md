@@ -15,14 +15,12 @@ Proyecto de una pastelería donde se trabajaron 5 áreas:
   
   <ul>
     <li>Routes <ul>
-        <li>Cakes.Routes</li>
-        <li>Complements.Routes</li>
+        <li>Products.Routes</li>
         <li>Orders.Routes</li>
       </ul>
     </li>
     <li>Services <ul>
-        <li>Cake.Service: </li>
-        <li>Complemnets.Service: </li>
+        <li>Products.Service: </li>
         <li>Orders.Service</li>
       </ul>
     </li>
@@ -31,8 +29,14 @@ Proyecto de una pastelería donde se trabajaron 5 áreas:
       <li>Joi<li>
       </ul>
     </li>
-    <li>Schemas <ul>
-      <li>Cake.Schema</li>
+    <li>Schemas<ul>
+      <li>Products.Schema</li>
+      <li>>Orders.Schema</li>
+      </ul>
+    </li>
+    <li>Models<ul>
+      <li>Products.Model</li>
+      <li>>Orders.Model</li>
       </ul>
     </li>
   </ul>
@@ -41,7 +45,7 @@ Proyecto de una pastelería donde se trabajaron 5 áreas:
 <section id="postgresql">
   <h3>2. Base de datos con PostgreSQL.</h3>  
   <p>Para la experiencia y diseño del usuario se siguio una métodologia Design Thinkin.</p>
-  <img src='./bd/Diagram.jpg'>
+  <img src='./bd/Diagram3.jpg'> 
 </section>
 
 <section id="design">
