@@ -31,12 +31,12 @@ Proyecto de una pastelería donde se trabajaron 5 áreas:
     </li>
     <li>Schemas<ul>
       <li>Products.Schema</li>
-      <li>>Orders.Schema</li>
+      <li>Orders.Schema</li>
       </ul>
     </li>
     <li>Models<ul>
       <li>Products.Model</li>
-      <li>>Orders.Model</li>
+      <li>Orders.Model</li>
       </ul>
     </li>
   </ul>
