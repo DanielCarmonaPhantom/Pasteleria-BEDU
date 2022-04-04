@@ -3,11 +3,11 @@
 
 Introducción:
 Proyecto de una pastelería donde se trabajaron 5 áreas: 
-1. <a href="bacjend" >Backend con Node.js y API Rest con Express.js</a>
-2. <a href="postgresql" >Base de datos con PostgreSQL.</a>
-3. <a href="design" >Diseño UX/UI de la Interfaz de Usuario </a>
-4. <a href="frontend" >Diseño Frontend de la aplicación web.</a>
-5. <a href="ml" >Sistema de recomendaciones con Machine Learning y Python.</a>
+1. Backend con Node.js y API Rest con Express.js
+2. Base de datos con PostgreSQL.
+3. Diseño UX/UI de la Interfaz de Usuario.
+4. Diseño Frontend de la aplicación web.
+5. Sistema de recomendaciones con Machine Learning y Python.
 
 <section id="backend">
   <h3>1. Backend con Node.js y API Rest con Express.js</h3>
@@ -42,7 +42,7 @@ Proyecto de una pastelería donde se trabajaron 5 áreas:
   </ul>
 </section>
   
-<section id="postgresql">
+<section id="one">
   <h3>2. Base de datos con PostgreSQL.</h3>  
   <p>Para la experiencia y diseño del usuario se siguio una métodologia Design Thinkin.</p>
   <img src='./bd/Diagram3.jpg'> 
@@ -52,6 +52,7 @@ Proyecto de una pastelería donde se trabajaron 5 áreas:
   <h3>3. Diseño UX/UI de la Interfaz de Usuario</h3>
   <p>Para la experiencia y diseño del usuario se siguio una métodologia Design Thinkin.</p>
   <a href='./design/' >Proceso de Diseño</a>
+  <img src='./design/FinalDesign.jpg'> 
  </section>
  
 <section id="frontend">
