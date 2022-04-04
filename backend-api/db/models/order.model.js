@@ -1,5 +1,7 @@
 const { Model, DataTypes, Sequelize } =  require('sequelize');
 
+const { PRODUCT_TABLES } = require('./product.model')
+
 const ORDER_TABLES = 'orders';
 
 const OrderSchema = {
@@ -15,7 +17,7 @@ const OrderSchema = {
     },
     idProduct:{
         allowNull: false,
-        type: DataTypes.INTEGER
+        type: DataTypes.INTEGER,
     },
     amount:{
         allow_Null: false,
@@ -36,7 +38,6 @@ const OrderSchema = {
 
 class Order extends Model{
     static associate(){
-        //models
     }
     static config(sequelize){
         return{
