@@ -46,6 +46,6 @@ Contenido:
 <section id='high' >
   <h3>8. WIreframes de Alta fidelidad</h3>
   <p>Una vez teniendo el moodboard, se procedió a darle vida a los wireframes de baja difelidad.</p>
-  <img src="./Inicio.jpg">
+  <img src="./Inicio (1).jpg">
 </section>
 
