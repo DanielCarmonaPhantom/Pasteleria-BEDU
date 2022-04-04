@@ -4,41 +4,41 @@ const CUSTOMER_TABLES = 'customers';
 
 const CustomerSchema = {
     idCostumer:{
-        allowNull: false,
+        allowNull: true,
         autoIncrement: true,
         primaryKey: true,
         type: DataTypes.INTEGER
     },
     name:{
-        allowNull: false,
+        allowNull: true,
         type: DataTypes.STRING
     },
     street: {
-        allowNull: false,
+        allowNull: true,
         type: DataTypes.STRING
     },
     num1: {
-        allowNull: false,
+        allowNull: true,
         type: DataTypes.INTEGER
     },
     num2: {
-        allowNull: false,
+        allowNull: true,
         type: DataTypes.INTEGER
     },
     suburb: {
-        allowNull: false,
+        allowNull: true,
         type: DataTypes.STRING
     },
     city: {
-        allowNull: false,
+        allowNull: true,
         type: DataTypes.STRING
     },
     state: {
-        allowNull: false,
+        allowNull: true,
         type: DataTypes.STRING
     },
     zipcode: {
-        allowNull: false,
+        allowNull: true,
         type: DataTypes.STRING
     },
 

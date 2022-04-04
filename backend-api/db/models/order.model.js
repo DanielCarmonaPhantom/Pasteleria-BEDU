@@ -1,7 +1,5 @@
 const { Model, DataTypes, Sequelize } =  require('sequelize');
 
-const { PRODUCT_TABLES } = require('./product.model')
-
 const ORDER_TABLES = 'orders';
 
 const OrderSchema = {
