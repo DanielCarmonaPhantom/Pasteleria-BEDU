@@ -1,16 +1,21 @@
 body {
   font-family: "Open Sans", sans-serif;
+  background-color: #F7F8FC;
   color: #444444;
 }
 
 a {
-  color: #14c871;
+  color: #F4D9EC;
   text-decoration: none;
 }
 
 a:hover {
   color: #206bfb;
   text-decoration: none;
+}
+
+.btn {
+  background-color: #FAD99A;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -87,7 +92,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
-  color: #16df7e;
+  color: #E4BCD4;
 }
 
 .navbar .getstarted, .navbar .getstarted:focus {
@@ -169,6 +174,21 @@ h1, h2, h3, h4, h5, h6 {
   .navbar .dropdown .dropdown:hover > ul {
     left: -100%;
   }
+}
+#productos #contenedor .card {
+  border-radius: 8px;
+}
+#productos #contenedor .card .card-img-top {
+  padding: 32px;
+}
+#productos #contenedor .card .card-body .card-title {
+  font-size: 16px;
+  font-weight: 600;
+}
+#productos #contenedor .card .card-body .btn {
+  margin-left: 50%;
+  border-radius: 25px;
+  padding: 8px 16px;
 }
 
 /*# sourceMappingURL=output.css.map */
