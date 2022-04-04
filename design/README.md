@@ -10,8 +10,8 @@ Contenido:
 4. <a href='#architecture'>Arquitectura de la información</a>
 5. <a href='#user'>User Flow</a>
 6. <a href='#low'>Wireframe de Baja Fidelidad</a>
-7. Moodboard
-8. Wireframe de Alta Fidelidad
+7. <a href='#moodboard'>Moodboard</a>
+8. <a href='#high'>Wireframe de Alta Fidelidad</a>
 
 <section id='surveys' >
   <h3>1. Encuesta a Usuarios</h3>
@@ -37,5 +37,15 @@ Contenido:
   <h3>6. Wireframe de Baja Fidelidad</h3>
   <p>Se fue diseñado la interfaz de baja fidelaidad cumpliendo con los requerimientos de usuario según el user flow.</p>
   <img src="./Wireframes.jpg">
+</section>
+<section id='low' >
+  <h3>7. Moodboard</h3>
+  <p>Para inspiración, se buscó temas relacionados a colores pastel, donde los colores pudieran transmitir cremosidad.</p>
+  <img src="./Moodboard.jpg">
+</section>
+<section id='high' >
+  <h3>8. Wireframes de Alta fidelidad</h3>
+  <p>Una vez teniendo el moodboard, se procedió a darle vida a los wireframes de baja difelidad.</p>
+  <img src="./Inicio.jpg">
 </section>
 
