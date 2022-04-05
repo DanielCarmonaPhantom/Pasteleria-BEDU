@@ -28,14 +28,14 @@ Proyecto de una pastelería donde se trabajaron 5 áreas:
 </section>
   
 <section id="one">
-  <h3>4. Base de datos con PostgreSQL.</h3>  
+  <h3>3. Base de datos con PostgreSQL.</h3>  
   <p>Teniendo ya las rutas para las peticiones de datos, se trabajo en el ORM para diseñar las tablas donde estarian nuestros datos.</p>
   <p>Se diseñaron las siguientes tablas:</p>
   <img src='./bd/Diagram4.jpg'> 
 </section>
 
 <section id="design">
-  <h3>5. UI de la Interfaz de Usuario</h3>
+  <h3>4. UI de la Interfaz de Usuario</h3>
   <p>Ya teniendo la arquitectura completa de nuestra API, se procedio a realizar el Diseño UI de nuestra aplicación. </p>
   <p>De los Wireframes de baja fidelidad que se realizarón en el proceso de diseño, se continuo contruyendo un Moodboard para hacer el diseño de una Pastelería</p>
   <a href='./design/' >Proceso de Diseño</a>
@@ -43,9 +43,9 @@ Proyecto de una pastelería donde se trabajaron 5 áreas:
  </section>
  
 <section id="frontend">
-  <h3>4. Diseño Frontend de la aplicación web.</h3>  
+  <h3>5. Diseño Frontend de la aplicación web.</h3>  
 </section>
 
 <section id="ml">
-  <h3>5. Sistema de recomendaciones con Machine Learning y Python.</h3>  
+  <h3>6. Sistema de recomendaciones con Machine Learning y Python.</h3>  
 </section>
