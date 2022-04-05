@@ -20,35 +20,8 @@ Proyecto de una pastelería donde se trabajaron 5 áreas:
 
 <section id="backend">
   <h3>2. Desarrollo de Backend con Node.js y API Rest con Express.js</h3>
-  <p>Se trabajo todo lo aprendido en clase para levantar un servidor donde se estructuro una API rest para la pastelería, donde se crearon los siguientes archivos:</p>
-  
-  <ul>
-    <li>Routes <ul>
-        <li>Products.Routes</li>
-        <li>Orders.Routes</li>
-      </ul>
-    </li>
-    <li>Services <ul>
-        <li>Products.Service: </li>
-        <li>Orders.Service</li>
-      </ul>
-    </li>
-    <li>Middlewares <ul>
-      <li>@hapi/boom</li>
-      <li>Joi<li>
-      </ul>
-    </li>
-    <li>Schemas<ul>
-      <li>Products.Schema</li>
-      <li>Orders.Schema</li>
-      </ul>
-    </li>
-    <li>Models<ul>
-      <li>Products.Model</li>
-      <li>Orders.Model</li>
-      </ul>
-    </li>
-  </ul>
+  <p>Se trabajo todo lo aprendido en clase para levantar un servidor donde se estructuro una API rest para la pastelería.</p>
+  <img src='./design/REST_API.jpg'> 
 </section>
   
 <section id="one">
