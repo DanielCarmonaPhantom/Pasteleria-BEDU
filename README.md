@@ -31,7 +31,7 @@ Proyecto de una pastelería donde se trabajaron 5 áreas:
   <h3>3. Base de datos con PostgreSQL.</h3>  
   <p>Teniendo ya las rutas para las peticiones de datos, se trabajo en el ORM para diseñar las tablas donde estarian nuestros datos.</p>
   <p>Se diseñaron las siguientes tablas:</p>
-  <img src='./bd/Diagram4.jpg'> 
+  <img src='./bd/Diagram5.jpg'> 
 </section>
 
 <section id="design">
