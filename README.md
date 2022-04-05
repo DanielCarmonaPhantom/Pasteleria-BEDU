@@ -23,7 +23,7 @@ Proyecto de una pastelería donde se trabajaron 5 áreas:
   <p>Se trabajo todo lo aprendido en clase para levantar un servidor donde se estructuró una API rest para la pastelería.</p>
   <p>Se empezo trabajando con las principales routas que tendriamos para la aplicación. Se mantuvo la ideología de una Clean Architecture al crear una capa de servicios de cada uno de nuestros enpoints.<p>
   <p>Despues se incorporaron middlawares para espuesta de servidor, así como para validar los datos de entrada.</p>
-  <p>Se incorporo un ORM para el manejo de la base de datos y se levanto un contenedor en PostgreSQL</p>
+  <p>Se incorporo un ORM para el manejo de la base de datos y se levanto un contenedor en PostgreSQL y de pgAdmin</p>
   <img src='./design/REST_API.jpg'> 
 </section>
   
