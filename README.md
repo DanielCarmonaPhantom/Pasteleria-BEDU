@@ -11,9 +11,9 @@ Proyecto de una pastelería donde se trabajaron 5 áreas:
 
 <section>
   <h3>1. Problem statement</h3>
-  <p>Para el desarrollo de nuestra aplicación, se empezo realizando una hipotesis sobre los posbiles Pains de nuestros Stakeholders.<p/>
-  <p>Se realico investigación de Usuario para encontrar insights.<p/>
-  <p>Si te interesa, puedes sequir seguir todo el <a href='./design/' >proceso de diseño aqui</a></p>
+  <p>Para el desarrollo de nuestra aplicación, se empezo con una hipotesis sobre los posibles Pains de nuestros Stakeholders.<p/>
+  <p>Se realizó investigación de Usuario para encontrar insights para trabajarlo en nuestra aplicación.<p/>
+  <p>Si te interesa, puedes sequir seguir todo el <a href='./design/' >proceso de diseño aqui</a>.</p>
 </section>
 
 <section id="backend">
