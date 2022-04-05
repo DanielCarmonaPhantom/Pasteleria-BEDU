@@ -65,7 +65,7 @@ const order_add = document.querySelector('#order-add')
         fetch(url, fetchData)
             .then(response => response.json())
             .then(function (data) {
-                
+                console.log(data)
             })
 
          

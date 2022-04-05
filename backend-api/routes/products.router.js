@@ -23,7 +23,7 @@ router.get('/', async (req, res, next)=>{
 router.get('/:idProducts', validatorHandler(getProductSchema, 'params'),
     async (req, res, next)=>{
         try {
-            const { idProducts } = req.params;        
+            const { idProducts } = req.params;   
             const products = await service.findOne(idProducts);
             res.json(products)
         } catch (error) {
