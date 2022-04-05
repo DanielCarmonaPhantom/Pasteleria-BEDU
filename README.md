@@ -9,6 +9,13 @@ Proyecto de una pastelería donde se trabajaron 5 áreas:
 * Diseño Frontend de la aplicación web.
 * Sistema de recomendaciones con Machine Learning y Python.
 
+<section>
+  <h3>1. Problem statement</h3>
+  <p>Para el desarrollo de nuestra aplicación, se empezo realizando una hipotesis sobre los posbiles Pains de nuestros Stakeholders.<p/>
+  <p>Se realico investigación de Usuario para encontrar insights.<p/>
+  <p>Si te interesa, puedes sequir seguir todo el <a href='./design/' >proceso de diseño aqui</a></p>
+</section>
+
 <section id="backend">
   <h3>1. Backend con Node.js y API Rest con Express.js</h3>
   <p>Se trabajo todo lo aprendido en clase para levantar un servidor donde se estructuro una API rest para la pastelería, donde se crearon los siguientes archivos:</p>
