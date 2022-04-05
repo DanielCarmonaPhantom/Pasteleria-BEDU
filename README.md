@@ -44,6 +44,9 @@ Proyecto de una pastelería donde se trabajaron 5 áreas:
  
 <section id="frontend">
   <h3>5. Diseño Frontend de la aplicación web.</h3>  
+  <p>Se empezo la maquetación de la página web del diseño de WireFrames de alta fidelidad. Se trabajarón cada uno de los eventos que realizaría la página y los botones, y despues se trabajo con el DOM para pintar cada petición.</p>
+  <img src='./design/2022-04-05 18-25-37.gif'> 
+  
 </section>
 
 <section id="ml">
