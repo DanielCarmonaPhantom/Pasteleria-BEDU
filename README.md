@@ -15,7 +15,7 @@ Proyecto de una pastelería donde se trabajaron 5 áreas:
   <p>Se realizó investigación de Usuario para encontrar insights para trabajarlo en nuestra aplicación.<p/>
   <p>Si te interesa, puedes sequir seguir todo el <a href='./design/' >proceso de diseño aqui</a>.</p>
   <p>Esta investigación nos ayudo a encontrar cual seria el flujo de nuestra aplicación.</p> 
-  <img src='./bd/Arquitectura.jpg'> 
+  <img src='./design/Arquitectura.jpg'> 
 </section>
 
 <section id="backend">
