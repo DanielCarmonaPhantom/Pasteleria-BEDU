@@ -14,10 +14,6 @@ a:hover {
   text-decoration: none;
 }
 
-.btn {
-  background-color: #FAD99A;
-}
-
 h1, h2, h3, h4, h5, h6 {
   font-family: "Raleway", sans-serif;
 }
@@ -192,7 +188,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 section {
-  padding: 60px 0;
   overflow: hidden;
 }
 
@@ -256,15 +251,28 @@ section {
   margin-bottom: 0;
 }
 
-.course-details h3 {
-  font-size: 24px;
-  margin: 30px 0 15px 0;
+.course-details .contenedor-image {
+  text-align: center;
+  background-color: #fff;
+  border-radius: 16px;
+  border: #E3E3E3 solid 1px;
+}
+.course-details .contenedor-image img {
+  width: 84%;
+}
+.course-details .contenedor-info {
+  background-color: #fff;
+  border-radius: 16px;
+  border: #E3E3E3 solid 1px;
+  padding: 16px 8px;
+}
+.course-details .contenedor-info h1 {
+  font-size: 36px;
   font-weight: 700;
   position: relative;
   padding-bottom: 10px;
 }
-
-.course-details h3:before {
+.course-details .contenedor-info h1:before {
   content: "";
   position: absolute;
   display: block;
@@ -274,8 +282,7 @@ section {
   bottom: 0;
   left: 0;
 }
-
-.course-details h3:after {
+.course-details .contenedor-info h1:after {
   content: "";
   position: absolute;
   display: block;
@@ -285,27 +292,41 @@ section {
   bottom: 0;
   left: 0;
 }
-
-.course-details .course-info {
+.course-details .contenedor-info .course-info {
   background: #f6f7f6;
   padding: 10px 15px;
   margin-bottom: 15px;
 }
-
-.course-details .course-info h5 {
-  font-weight: 400;
-  font-size: 16px;
-  margin: 0;
-  font-family: "Poppins", sans-serif;
-}
-
-.course-details .course-info p {
+.course-details .contenedor-info .course-info p {
+  font-size: 24px;
   margin: 0;
   font-weight: 600;
 }
-
-.course-details .course-info a {
+.course-details .contenedor-info .course-info a {
   color: #657a6d;
+}
+.course-details .selects {
+  margin-top: 16px;
+  margin-right: 16px;
+}
+.course-details .selects .btn {
+  background-color: #FFF;
+  border-color: #444444;
+  color: #444444;
+}
+.course-details .selects a {
+  color: #212121;
+}
+.course-details .carrito {
+  margin-top: 32px;
+}
+.course-details .recomendados {
+  margin-top: 16px;
+  background-color: #C6E1F1;
+  padding: 16px 8px;
+  border-radius: 16px;
+  border: #E3E3E3 solid 1px;
+  color: #212121;
 }
 
 /*# sourceMappingURL=output.css.map */

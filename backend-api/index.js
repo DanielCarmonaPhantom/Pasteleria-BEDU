@@ -10,6 +10,7 @@ const port = 3000;
 
 
 app.use(express.json());
+// app.use(express.urlencoded({extend: true}))
 
 const whitelist = ['http://localhost:5500'];
 const options = {

@@ -19,8 +19,8 @@
       <h1 class="logo"><a href="index.html">Pastelería Bedu</a></h1>
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto active" href="./index.html">Inicio</a></li>
-          <li><a class="nav-link scrollto" href="./cakes.html">Pasteles</a></li>
+          <li><a class="nav-link scrollto " href="./index.html">Inicio</a></li>
+          <li><a class="nav-link scrollto active" href="./cakes.html">Pasteles</a></li>
           <li><a class="nav-link scrollto" href="./complements.html">Complementos</a></li>
           <li><a class="getstarted scrollto" href="./orden.html">Carrito</a></li>
         </ul>
@@ -47,41 +47,71 @@
 
   <section id="course-details" class="course-details">
     <div class="container" data-aos="fade-up">
-
       <div class="row">
-        <div class="col-lg-8">
-          <img src="assets/img/course-details.jpg" class="img-fluid" alt="">
-          <h3>Et enim incidunt fuga tempora</h3>
-
+        <div class="col-lg-7 pl-0 p0">
+          <div class="contenedor-image">
+            <img src="" class=" img-cake" alt="">
+          </div>
         </div>
-        <div class="col-lg-4">
+        <div class="col-lg-4 offset-1">
+          <div class="contenedor-info">   
+            <div class="course-info justify-content-between">
+              <h1 class="name-cake"></h1>
+              <p class="price-cake"></p>
+              <p>Envio Gratuito</p>
+              <div class="selects ">
+                <div class="input-group mb-3">
+                  
+                  <select class="custom-select" id="inputGroupSelect01">
+                    <option selected>Cantidad</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                  </select>
+                </div>
+                <div class="input-group mb-3">                  
+                  <select class="custom-select" id="inputGroupSelect02">
+                    <option selected>Tamaño</option>
+                    <option value="1">Chico (2 a 4 Personas)</option>
+                    <option value="2">Mediano(5 a 7 Personas)</option>
+                    <option value="3">Grande (+7 Personas)</option>
+                  </select>
+                </div>
+                
+              </div>
+              <div class="carrito">
 
-          <div class="course-info d-flex justify-content-between align-items-center">
-            <h5>Trainer</h5>
-            <p><a href="#">Walter White</a></p>
+                <button type="button" class="btn btn-lg btn-buy btn-primary" id="order-add" >Agregar al carrito</button>
+              </div>
+            </div>
+            
           </div>
-
-          <div class="course-info d-flex justify-content-between align-items-center">
-            <h5>Course Fee</h5>
-            <p>$165</p>
-          </div>
-
-          <div class="course-info d-flex justify-content-between align-items-center">
-            <h5>Available Seats</h5>
-            <p>30</p>
-          </div>
-
-          <div class="course-info d-flex justify-content-between align-items-center">
-            <h5>Schedule</h5>
-            <p>5.00 pm - 7.00 pm</p>
-          </div>
-
         </div>
       </div>
+      <div class="row">        
+          <div class="col-12">            
+            <div class="recomendados">
+              <div class="row">
+                <div class="col-4">
+                  <img class="img-cake" src="" alt="">
+                </div>
+                <div class="col-8">
+                  <h3 class="mt-4">Para compartir, llevate tambien el  <span class="name-cake"></span> por <span class="price-cake"></span></h3>
+                  <button type="button" class="btn btn-primary btn-lg btn-block mt-5">Agregar al carrito</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+        
 
+
+      </div>
     </div>
   </section><!-- End Cource Details Section -->
-
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   <script src="./assets/js/orden.js"></script>
   
 </body>

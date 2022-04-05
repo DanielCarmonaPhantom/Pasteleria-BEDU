@@ -3,12 +3,12 @@ const { Model, DataTypes, Sequelize } =  require('sequelize');
 const ORDER_TABLES = 'orders';
 
 const OrderSchema = {
-    idOrders:{
-        allowNull: false,
-        autoIncrement: true,
-        primaryKey: true,
-        type: DataTypes.INTEGER
-    },
+    // idOrders:{
+    //     allowNull: false,
+    //     autoIncrement: true,
+    //     primaryKey: true,
+    //     type: DataTypes.INTEGER
+    // },
     idPayment:{
         allowNull: false,
         type: DataTypes.INTEGER
