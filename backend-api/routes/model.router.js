@@ -10,15 +10,18 @@ const service = new ProductsService ();
 
 
 
-const childPython = spawn ('/bin/python3',['/home/daniel/Desktop/Pasteleria/backend-api/ml/modelo.scripts.py']);
+
 
 
 
 router.get('/:idProducts',
     async (req, res, next)=>{
 
+        const childPython = spawn ('/bin/python3',['/home/daniel/Desktop/Pasteleria/backend-api/ml/modelo.scripts.py']);
+
         const { idProducts } = req.params;
 
+        
         var product_predict = ""
 
 
@@ -27,8 +30,10 @@ router.get('/:idProducts',
             
         })
 
-        childPython.stdout.on("end",function () {  
-            console.log(product_predict)  
+        childPython.stdout.on("end",async function () {  
+            
+            const products = await service.findOne(product_predict);
+            res.json(products)
         })
 
         childPython.stdin.write(idProducts)
@@ -37,8 +42,7 @@ router.get('/:idProducts',
 
 
         try {
-            const products = await service.findOne(4);
-            res.json(products)
+            
         } catch (error) {
             next(error)
         }

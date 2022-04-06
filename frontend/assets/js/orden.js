@@ -24,12 +24,32 @@
                 }
                 for (let i = 0; i < price_cake.length; i++) {                    
                     price_cake[i].innerHTML = data.price + ' MX'               
-                }
-                
+                }              
                 
             })
     }
+    function pintarRecomendado() {
+        let url = 'http://localhost:3000/api/v1/model/' + localStorage.getItem('idProduct');
+
+        const fetchData = {
+            method: 'GET',           
+        } 
+        fetch(url,fetchData)
+        .then(response => response.json())
+        .then(function (product_pred) {
+            console.log(product_pred)
+            const name_cake_pred = document.querySelector('.name-cake-pred');
+            const img_cake_pred = document.querySelector('.img-cake-pred');
+            const price_cake_pred = document.querySelector('.price-cake-pred');
+
+            name_cake_pred.innerHTML = product_pred.name;
+            img_cake_pred.setAttribute('src', product_pred.image)  
+            price_cake_pred.innerHTML = product_pred.price
+            
+        })
+    }
     paintProduct()
+    pintarRecomendado()
 
     
     
