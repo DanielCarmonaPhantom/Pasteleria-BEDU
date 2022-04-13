@@ -1,42 +1,32 @@
 const Joi = require('joi');
 
-const id = Joi.number();
-const name = Joi.string();
-const street = Joi.string();
-const num1 = Joi.number();
-const num2 = Joi.number();
-const suburb = Joi.string();
-const city = Joi.string();
-const state = Joi.string();
-const zipcode = Joi.string();
-
-
-const createCustomerSchema = Joi.object({
-    id : id,
-    name: name,
-    street: street,
-    num1: num1,
-    num2: num2,
-    suburb: suburb,
-    city: city,
-    state: state,
-    zipcode: zipcode
-})
-
-const updateCustomerSchema = Joi.object({
-    id: id.required(),
-    name: name,
-    street: street,
-    num1: num1,
-    num2: num2,
-    suburb: suburb,
-    city: city,
-    state: state,
-    zipcode: zipcode
-})
+const id = Joi.number().integer();
+const name = Joi.string().min(3).max(30);
+const lastName = Joi.string();
+const phone =  Joi.string();
+const userId = Joi.number().integer();
+const email = Joi.string().email();
+const password =  Joi.string();
 
 const getCustomerSchema = Joi.object({
-    id: id.required(),
-})
+  id: id.required(),
+});
 
-module.exports = { createCustomerSchema, updateCustomerSchema, getCustomerSchema}
+const createCustomerSchema = Joi.object({
+  name: name.required(),
+  lastName: lastName.required(),
+  phone: phone.required(),
+  user: Joi.object({
+    email: email.required(),
+    password: password.required()
+  })
+});
+
+const updateCustomerSchema = Joi.object({
+  name,
+  lastName,
+  phone,
+  userId
+});
+
+module.exports = { getCustomerSchema, createCustomerSchema, updateCustomerSchema };

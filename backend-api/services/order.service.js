@@ -1,49 +1,50 @@
 const boom = require('@hapi/boom');
-const faker = require('faker');
 
-const { models } = require('./../libs/sequelize')
+const { models } = require('./../libs/sequelize');
 
-class OrdersService{
-    constructor(){
+class OrderService {
 
-    }
-    async create(data){
-        const newOrder = await models.Order.create(data);
-        return newOrder
-    }
+  constructor(){
+  }
 
-    async find(){
-        const rta = await models.Order.findAll();
-        return rta;
-    }
+  async create(data) {
+    const newOrder = await models.Order.create(data);
+    return newOrder;
+  }
 
-    async findOne(id){
-        const order = await models.Order.findByPk(id, {
-            include: ['customer']
-            
-        })
-        if (!order) {
-            throw boom.notFound('product not found')
-        }
-        return order
-    }
+  async addItem(data) {
+    const newItem = await models.OrderProduct.create(data);
+    return newItem;
+  }
 
-    async update(id, changes){
-        const order = await this.findOne(id);
-        const rta = await order.update(changes)
-        return rta;
-    }
+  async find() {
+    return [];
+  }
 
-    async delete(id){
-        const order = await this.findOne(id);
-        if (!order) {            
-            throw boom.notFound('product not found')
-        }
-        await order.destroy();
-        return { id };
-    }
+  async findOne(id) {
+    const order = await models.Order.findByPk(id, {
+      include: [
+        {
+          association: 'customer',
+          include: ['user']
+        },
+        'items'
+      ]
+    });
+    return order;
+  }
 
+  async update(id, changes) {
+    return {
+      id,
+      changes,
+    };
+  }
+
+  async delete(id) {
+    return { id };
+  }
 
 }
 
-module.exports = OrdersService;
+module.exports = OrderService;
