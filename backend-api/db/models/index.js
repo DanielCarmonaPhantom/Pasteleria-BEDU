@@ -11,6 +11,7 @@ function septupModels(sequelize) {
 
     Order.associate(sequelize.models)
     Customer.associate(sequelize.models);
+    Product.associate(sequelize.models);
 }
 
 

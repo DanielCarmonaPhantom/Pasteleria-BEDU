@@ -17,11 +17,11 @@ router.get('/', async (req, res, next)=>{
     }
     
 });
-router.get('/:idOrders', validatorHandler(getOrderSchema, 'params'),
+router.get('/:id', validatorHandler(getOrderSchema, 'params'),
     async (req, res, next)=>{
         try {
-            const { idOrders } = req.params;        
-            const orders = await service.findOne(idOrders);
+            const { id } = req.params;        
+            const orders = await service.findOne(id);
             res.json(orders)
         } catch (error) {
             next(error)
@@ -36,25 +36,25 @@ router.post('/',
         res.status(201).json(newOrder);
 })
 
-router.patch('/:idOrders', 
+router.patch('/:id', 
     validatorHandler(getOrderSchema, 'params'),
     validatorHandler(updateOrderSchema, 'body'),
     async (req, res, next)=>{
         try {
-            const { idOrders } = req.params;
+            const { id} = req.params;
             const body = req.body;
-            const product = await service.update(idOrders, body);
+            const product = await service.update(id, body);
             res.json(product)
         } catch (error) {
             next(error)
     }   
 })
-router.delete('/:idOrders', validatorHandler(getOrderSchema, 'params'),
+router.delete('/:id', validatorHandler(getOrderSchema, 'params'),
     async (req, res, next)=>{
         try {
-            const { idOrders } = req.params;
+            const { id } = req.params;
         
-            const orders = await service.delete(idOrders);
+            const orders = await service.delete(id);
             res.json(orders)
         } catch (error) {
             next(error)

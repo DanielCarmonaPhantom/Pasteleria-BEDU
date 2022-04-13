@@ -8,12 +8,6 @@ const router = express.Router();
 const service = new ProductsService ();
 
 
-
-
-
-
-
-
 router.get('/:idProducts',
     async (req, res, next)=>{
 

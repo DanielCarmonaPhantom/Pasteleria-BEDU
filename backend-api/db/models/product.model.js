@@ -3,26 +3,26 @@ const { Model, DataTypes, Sequelize } =  require('sequelize');
 const PRODUCT_TABLES = 'products';
 
 const ProductSchema = {
-    idProducts:{
-        allowNull: false,
+    id:{
+        allowNull: true,
         autoIncrement: true,
         primaryKey: true,
         type: DataTypes.INTEGER
     },
     name:{
-        allowNull: false,
+        allowNull: true,
         type: DataTypes.STRING
     },
     category: {
-        allowNull: false,
+        allowNull: true,
         type: DataTypes.STRING
     },
     price: {
-        allowNull: false,
+        allowNull: true,
         type: DataTypes.DECIMAL
     },
     image:{
-        allowNull: false,
+        allowNull: true,
         type: DataTypes.STRING
     }
 
@@ -30,8 +30,11 @@ const ProductSchema = {
 }
 
 class Product extends Model{
-    static associate(){
-        //models
+    static associate(models){
+        // this.hasMany(models.Order, {
+        //     as: 'orders',
+        //     foreignKey: 'productId'
+        // });
     }
     static config(sequelize){
         return{

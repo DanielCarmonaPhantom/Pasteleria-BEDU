@@ -20,11 +20,11 @@ router.get('/', async (req, res, next)=>{
     }
     
 });
-router.get('/:idProducts', validatorHandler(getProductSchema, 'params'),
+router.get('/:id', validatorHandler(getProductSchema, 'params'),
     async (req, res, next)=>{
         try {
-            const { idProducts } = req.params;   
-            const products = await service.findOne(idProducts);
+            const { id } = req.params;   
+            const products = await service.findOne(id);
             res.json(products)
         } catch (error) {
             next(error)
@@ -39,25 +39,25 @@ router.post('/',
         res.status(201).json(newProduct);
 })
 
-router.patch('/:idProducts', 
+router.patch('/:id', 
     validatorHandler(getProductSchema, 'params'),
     validatorHandler(updateProductSchema, 'body'),
     async (req, res, next)=>{
         try {
-            const { idProducts } = req.params;
+            const { id } = req.params;
             const body = req.body;
-            const product = await service.update(idProducts, body);
+            const product = await service.update(id, body);
             res.json(product)
         } catch (error) {
             next(error)
     }   
 })
-router.delete('/:idProducts', validatorHandler(getProductSchema, 'params'),
+router.delete('/:id', validatorHandler(getProductSchema, 'params'),
     async (req, res, next)=>{
         try {
-            const { idProducts } = req.params;
+            const { id } = req.params;
         
-            const products = await service.delete(idProducts);
+            const products = await service.delete(id);
             res.json(products)
         } catch (error) {
             next(error)

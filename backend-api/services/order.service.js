@@ -5,24 +5,8 @@ const { models } = require('./../libs/sequelize')
 
 class OrdersService{
     constructor(){
-        this.products = [];
-        this.generate();
-    }
 
-    generate() {
-        const limit = 100;
-        for (let index = 0; index < limit; index++) {
-            this.products.push({
-                id: faker.datatype.uuid(),
-                name: faker.commerce.productName(),
-                price: parseInt(faker.commerce.price(), 10),
-                image: faker.image.imageUrl(),
-                
-            });
-        }
     }
-    
-
     async create(data){
         const newOrder = await models.Order.create(data);
         return newOrder
@@ -34,8 +18,10 @@ class OrdersService{
     }
 
     async findOne(id){
-
-        const order = await models.Order.findByPk(id)
+        const order = await models.Order.findByPk(id, {
+            include: ['customer']
+            
+        })
         if (!order) {
             throw boom.notFound('product not found')
         }
